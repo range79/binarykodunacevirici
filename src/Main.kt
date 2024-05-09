@@ -1,10 +1,11 @@
+import java.util.*
 
 
 fun main(){
    println("aritmetrik islemmi veya \n10 dalik rakami binarye donusturmekmi istiyorsunuz\n" +
           "aritmetrik islem icin 'aritmetrik'\n"+
            "binary donusturucu icin 'binary' yaziniz'")
-    val kesir: String = readln()
+    val kesir: String = readln().lowercase(Locale.getDefault())
     when(kesir)
     {
         "binary"->{
@@ -48,7 +49,7 @@ val x= readln().toInt()
 
                 println("ikinci sayiyi giriniz")
                 val y: Double? = readln().toDoubleOrNull()
-                if (y==null){
+                if (y==null) {
                     println("gecersiz islem girdiniz")
                     println("3 saniye icinde basa donuyorsunuz")
                     Thread.sleep(1000)
@@ -60,15 +61,35 @@ val x= readln().toInt()
                     println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
                     println("basa donduruldu")
                     return main()
-                }else{
+
+                    }
+                else{
 
                     println("yapmak istediginiz islemi giriniz")
                     val islem:String = readln()
 
                     when (islem) {
                         "*" -> println(x * y)
-                        "/" -> println(x.toDouble() / y.toDouble())
+                        "/" -> {
+                            if (y == 0.00) {
+                                println("0 a bolunemez\nbasa donuyorsunuz")
+                                Thread.sleep(1000)
+                                println(3)
+                                Thread.sleep(1000)
+                                println(2)
+                                Thread.sleep(1000)
+                                println(1)
+                                Thread.sleep(1000)
+                                println(0)
+                                Thread.sleep(1000)
+                                println("\n\n\n\n\n\n\n\n\n\n\n\n\basa donuldu")
+                                return main()
+
+
+                            }else{println(x.toDouble() / y.toDouble())}
+                        }
                         "+" -> println(x + y)
+
                         "-" -> println(x - y)
                         "toplaminin karakoku" -> println((x + y) * (x + y))
                         "mod" -> println(x % y)
