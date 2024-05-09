@@ -8,7 +8,7 @@
 
 
 <h1> Kodu calistirmak icin ilk once bilgisayarinizda java kurulu olmasi gerekiyor</h1>
-<h2=color></h2>kodu linuxda veya macosta calistirmak icin: <h2>
+<h2>kodu linuxda veya macosta calistirmak icin: </h2>
   <h2>1. cd Downloads<h2/>
 <h2> 2. java -jar calbian.jar </h2>
 
