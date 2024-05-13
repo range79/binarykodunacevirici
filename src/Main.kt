@@ -1,46 +1,28 @@
-import java.util.*
+
 
 
 fun main(){
-   println("aritmetrik islemmi veya \n10 dalik rakami binarye donusturmekmi istiyorsunuz\n" +
-          "aritmetrik islem icin 'aritmetrik'\n"+
-           "binary donusturucu icin 'binary' yaziniz'")
-    val kesir: String = readln().lowercase(Locale.getDefault())
+   println("aritmetrik islem icin '1' e  \n10dalik rakami binarye donusturmek icin  '2'ye basiniz:" )
+    val kesir: String = readln()
     when(kesir)
     {
-        "binary"->{
+        "2"->{
             print("donusturmek istedigin rakami gir:")
 
 val x= readln().toInt()
            println( decimalToBinary(x))
-            println("3 saniye icinde program yeniden basliyicak")
-            Thread.sleep(1000)
-            println(2)
-            Thread.sleep(1000)
-            println(1)
-            Thread.sleep(1000)
-            println("program basliyor...")
-           Thread.sleep(1000)
-            println("\n\n\n\n\n\n\n\n\n\n\n\n\n")
-            return main()
+           yeniden_baslat()
 
             }
 
 
-        "aritmetrik"->{
+       "1"->{
             println("ilk sayiyi giriniz")
             val x:Double?= readln().toDoubleOrNull()
 
             if (x==null){
                 println("gecersiz islem girdiniz")
-                println("3 saniye icinde basa donuyorsunuz")
-                Thread.sleep(1000)
-                println(2)
-                Thread.sleep(1000)
-                println(1)
-                Thread.sleep(1000)
-                println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
-                println("basa donduruldu")
+              programRestart()
 
                 return main()
             }
@@ -50,17 +32,8 @@ val x= readln().toInt()
                 println("ikinci sayiyi giriniz")
                 val y: Double? = readln().toDoubleOrNull()
                 if (y==null) {
-                    println("gecersiz islem girdiniz")
-                    println("3 saniye icinde basa donuyorsunuz")
-                    Thread.sleep(1000)
-                    println(2)
-                    Thread.sleep(1000)
-                    println(1)
-                    Thread.sleep(1000)
-
-                    println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
-                    println("basa donduruldu")
-                    return main()
+                println("deger girmediniz")
+                 programRestart()
 
                     }
                 else{
@@ -70,53 +43,18 @@ val x= readln().toInt()
 
                     when (islem) {
                         "*" -> println(x * y)
-                        "/" -> {
-                            if (y == 0.00) {
-                                println("0 a bolunemez\nbasa donuyorsunuz")
-                                Thread.sleep(1000)
-                                println(3)
-                                Thread.sleep(1000)
-                                println(2)
-                                Thread.sleep(1000)
-                                println(1)
-                                Thread.sleep(1000)
-                                println(0)
-                                Thread.sleep(1000)
-                                println("\n\n\n\n\n\n\n\n\n\n\n\n\basa donuldu")
-                                return main()
-
-
-                            }else{println(x.toDouble() / y.toDouble())}
-                        }
+                        "/" -> bolme(x, y)
                         "+" -> println(x + y)
 
                         "-" -> println(x - y)
                         "toplaminin karakoku" -> println((x + y) * (x + y))
                         "mod" -> println(x % y)
                         else -> {
-                            println("gecersiz islem")
-                            println("3 saniye icinde basa donuyorsunuz")
-                            Thread.sleep(1000)
-                            println(2)
-                            Thread.sleep(1000)
-                            println(1)
-                            Thread.sleep(1000)
-                            println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
-                            println("basa donduruldu")
-                            return main()
+
+                          yalnis_islem()
                         }
                     }
-                    println("\n\n")
-                    println("sonuc 3 saniye icinde ekrandan silinicektir")
-                    Thread.sleep(1000)
-                    println(3)
-                    Thread.sleep(1000)
-                    println(2)
-                    Thread.sleep(1000)
-                    println(1)
-                    Thread.sleep(1000)
-                    println("sonuc basariyla silindi")
-                    return main()
+            yeniden_baslat()
 
                 }
             }}
@@ -126,19 +64,8 @@ val x= readln().toInt()
 
 
     else-> {
-        println("yalnis islem")
-        Thread.sleep(1000)
-        println("kod yeniden basliyor...")
-        Thread.sleep(1000)
-        println(3)
-        Thread.sleep(1000)
-        println(2)
-        Thread.sleep(1000)
-        println(1)
-        Thread.sleep(1000)
-        println(0)
-        println("\n\n\n\n\n\n\n\n\n\n")
-        return main()
+
+      yalnis_islem()
 
     }
     }
@@ -158,3 +85,4 @@ fun decimalToBinary(decimal: Int): String{
     }
     return binary
 }
+
