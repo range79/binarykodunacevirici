@@ -1,15 +1,25 @@
-# binarykodunacevirici
-![185-1850489_mac-calculator-icon-png-transparent-png](https://github.com/range79/binarykodunacevirici/assets/157882017/1b7ff1d7-810d-4a5b-b1f4-b9f46fb6a1f8)
-<h1>Bu program 10 basamaklı sistemden 2 basamaklı sisteme yani ikili kod çözmenize ve kolay matematik problemlerini çözmenize yardımcı olur</h1>
+<h1>Binary Kodunu Çevirici</h1>
 
+<p>Bu program, onlu sistemdeki sayıları ikili sisteme çevirmenize ve matematiksel problemleri çözmenize yardımcı olur.</p>
 
+<h2>Kullanım Talimatları</h2>
 
+<h3>Java'nın Yüklenmesi</h3>
 
+<p>Bu programı kullanabilmek için bilgisayarınızda Java'nın yüklü olması gerekmektedir.</p>
 
+<h3>Linux veya MacOS'ta Çalıştırma Adımları</h3>
 
-<h1> Kodu calistirmak icin ilk once bilgisayarinizda java kurulu olmasi gerekiyor</h1>
-<h2>kodu linuxda veya macosta calistirmak icin: </h2>
-<H2>1.oncelikle terminali aciyoruz</H2>
-<h2>2. cd Downloads</h2>
-<h2> 3. java -jar calbian.jar </h2>
-<h2>java -jar yazip bosluk birakip bunlari dosyayi terminale surukleyip birakip enter tikliyabilirsiniz</h2>
+<ol>
+  <li>Terminal uygulamasını açın.</li>
+  <li>İndirilen dosyalarınızı içeren klasöre gidin (<code>cd Downloads</code>).</li>
+  <li>Aşağıdaki komutu terminalde çalıştırın:</li>
+</ol>
+
+<pre><code>java -jar calbian.jar</code></pre>
+
+<h3>Notlar</h3>
+
+<ul>
+  <li><code>java -jar</code> komutunu yazip Dosyayı terminal penceresine sürükleyip bırakarak da komutu çalıştırabilirsiniz</li>
+</ul>
