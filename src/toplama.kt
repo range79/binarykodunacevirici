@@ -1,9 +1,9 @@
 fun yeniden_baslat(){
     println("Programı yeniden başlatmak istiyor musunuz? (e/h)")
     val test: String = readLine() ?: ""
-    when(test.toUpperCase()){
+    when(test){
         "y", "e", "yes", "evet" -> programRestart()
-        else -> {}
+      else -> {}
     }
 }
 
