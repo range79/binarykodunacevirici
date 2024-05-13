@@ -8,7 +8,7 @@
 
 <p>Bu programı kullanabilmek için bilgisayarınızda Java'nın yüklü olması gerekmektedir.</p>
 
-<h3>Linux veya MacOS'ta Çalıştırma Adımları</h3>
+<h3>Linux, MacOS veya Windows'ta Çalıştırma Adımları</h3>
 
 <ol>
   <li>Terminal uygulamasını açın.</li>
