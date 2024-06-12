@@ -1,6 +1,28 @@
 import kotlin.math.pow
 fun main() {
-    println("Aritmetik işlem için '1' e\n10'luk rakamı binary'e dönüştürmek için '2'ye\nBinary'den 10'luk'a çevirmek için '3'e\nSözleri binary'e dönüştürmek için '4'e basınız")
+    println("""
+   ===================================
+   |                                 |
+   |          Calbian 1.3 e          |
+   |          hosgeldiniz            |
+   |        gelistici @range79       |
+   |      Aritmetik işlem için '1'   |
+   |                                 |
+   |       10'luk rakamı binary'e    |
+   |        dönüştürmek için '2'     |
+   |                                 |
+   |       Binary'den 10'luk         |
+   |      sisteme cevirmek icin'3'   |
+   |                                 |
+   |   Sözleri binary'e dönüştürmek  |
+   |       için '4' tusuna basip     |
+   |    sonrasinda enter basiniz     |
+   |=================================|
+        
+        
+        
+    """.trimIndent())
+
     val secim: String = readln()
     when (secim) {
         "4" -> {
